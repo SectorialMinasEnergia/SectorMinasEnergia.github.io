@@ -3,6 +3,10 @@ languageCode: "es-es"
 title: "Coordinadora de representantes de estudiantes de ingeniería de minas y energía"
 theme: hugo-profile
 
+params:
+  navbar:
+    brandName: "Sector Minas y Energía"
+    
 outputs:
   home:
     - "HTML"
