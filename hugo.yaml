@@ -1,6 +1,6 @@
-baseURL: "https://SectorMinasEnergia.github.io"
+baseURL: "https://sectorialminasenergia.github.io/SectorMinasEnergia.github.io/"
 languageCode: "es-es"
-title: "Coordinadora de representantes de estudiantes de ingeniería de minas y energía"
+title: "Sectorial de minas y energía"
 theme: hugo-profile
 
 params:
