@@ -4,12 +4,14 @@ title: "Sectorial de minas y energía"
 theme: hugo-profile
 
 params:
-  # RUTA BASE DE LOS ESTÁTICOS (de momento vacía)
-  staticPath: ""
-  # Usa Bootstrap desde CDN para asegurarnos de que el CSS llega sí o sí
-  # (el tema acepta true, "css" o "js"; ponemos "css" para ir a tiro fijo)
-  useBootstrapCDN: "css"
+  # aquí decimos en qué subcarpeta vive la web
+  staticPath: "/SectorMinasEnergia.github.io"
 
+  # si ya tenías favicon, déjalo igual o pon el tuyo
+  favicon: "/fav.png"
+
+  navbar:
+    brandName: "Sector Minas y Energía"
   navbar:
     brandName: "Sector Minas y Energía"
   
