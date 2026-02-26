@@ -6,7 +6,7 @@ theme: hugo-profile
 params:
   navbar:
     brandName: "Sector Minas y Energía"
-    staticPath: ""
+    staticPath: "/SectorMinasEnergia.github.io/"
   useBootstrapCDN: true
   
 outputs:
