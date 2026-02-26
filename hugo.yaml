@@ -1,4 +1,4 @@
-baseURL: "https://sectorialminasenergia.github.io/SectorMinasEnergia.github.io/"
+baseURL: "/"
 languageCode: "es-es"
 title: "Sectorial de minas y energía"
 theme: hugo-profile
