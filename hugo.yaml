@@ -4,14 +4,9 @@ title: "Sectorial de minas y energía"
 theme: hugo-profile
 
 params:
-  # aquí decimos en qué subcarpeta vive la web
   staticPath: "/SectorMinasEnergia.github.io"
+  favicon: "/SectorMinasEnergia.github.io/fav.png"
 
-  # si ya tenías favicon, déjalo igual o pon el tuyo
-  favicon: "/fav.png"
-
-  navbar:
-    brandName: "Sector Minas y Energía"
   navbar:
     brandName: "Sector Minas y Energía"
   
