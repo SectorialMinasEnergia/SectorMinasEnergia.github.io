@@ -4,10 +4,14 @@ title: "Sectorial de minas y energía"
 theme: hugo-profile
 
 params:
+  # RUTA BASE DE LOS ESTÁTICOS (de momento vacía)
+  staticPath: ""
+  # Usa Bootstrap desde CDN para asegurarnos de que el CSS llega sí o sí
+  # (el tema acepta true, "css" o "js"; ponemos "css" para ir a tiro fijo)
+  useBootstrapCDN: "css"
+
   navbar:
     brandName: "Sector Minas y Energía"
-    staticPath: "/SectorMinasEnergia.github.io/"
-  useBootstrapCDN: true
   
 outputs:
   home:
