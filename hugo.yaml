@@ -6,7 +6,9 @@ theme: hugo-profile
 params:
   navbar:
     brandName: "Sector Minas y Energía"
-    
+    staticPath: ""
+  useBootstrapCDN: true
+  
 outputs:
   home:
     - "HTML"
