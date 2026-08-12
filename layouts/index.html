@@ -1,22 +1,152 @@
 {{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
-
-<!-- fontawesome -->
-<script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
+<meta name="description" content="CREM representa y conecta al estudiantado de Ingeniería de Minas y Energía de España.">
+<meta name="theme-color" content="#102f2d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/crem.css" | relURL }}">
 {{ end }}
-
-{{ define "title" }}
-{{ .Site.Title }}
-{{ end }}
-
 {{ define "main" }}
-{{- partial "sections/hero/index.html" . -}}
-{{- partial "sections/about.html" . -}}
-{{- partial "sections/experience.html" . -}}
-{{- partial "sections/education.html" . -}}
-{{- partial "sections/projects.html" . -}}
-{{- partial "sections/achievements.html" . -}}
-{{- partial "sections/contact.html" . -}}
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="CREM, inicio">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><b>CREM</b><small>Representantes de Minas</small></span>
+    </a>
+    <button class="menu-button" aria-label="Abrir menÃº" aria-expanded="false"><span></span><span></span></button>
+    <nav aria-label="NavegaciÃ³n principal">
+      <a href="#nosotros">QuiÃ©nes somos</a>
+      <a href="#hacemos">QuÃ© hacemos</a>
+      <a href="#actualidad">Actualidad</a>
+      <a class="nav-cta" href="#contacto">Forma parte</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Coordinadora estatal Â· Desde 2005</p>
+        <h1>Estudiantes que<br><em>mueven el sector.</em></h1>
+        <p class="lead">Unimos a las Escuelas de Minas de EspaÃ±a para representar, conectar y abrir camino a la prÃ³xima generaciÃ³n de profesionales.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contacto">Quiero participar <span>â†—</span></a>
+          <a class="text-link" href="#nosotros">Conoce la CREM <span>â†“</span></a>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-label="Estratos geolÃ³gicos abstractos">
+        <div class="sun"></div>
+        <div class="strata strata-one"></div>
+        <div class="strata strata-two"></div>
+        <div class="strata strata-three"></div>
+        <p>De la universidad<br>al territorio</p>
+        <span class="art-number">01</span>
+      </div>
+      <div class="hero-foot">
+        <p>IngenierÃ­a de Minas <span>Ã—</span> EnergÃ­a <span>Ã—</span> RepresentaciÃ³n</p>
+        <p>EspaÃ±a Â· 2026</p>
+      </div>
+    </section>
+
+    <section class="statement" id="nosotros">
+      <p class="section-kicker reveal">Nuestra razÃ³n de ser</p>
+      <div class="statement-grid">
+        <h2 class="reveal">Una voz comÃºn para las escuelas que transforman el territorio.</h2>
+        <div class="statement-copy reveal">
+          <p>La CREM es la Coordinadora de Representantes de Estudiantes de Minas: el espacio donde las delegaciones comparten necesidades, construyen propuestas y defienden los intereses del estudiantado a escala nacional.</p>
+          <p>Tras dos dÃ©cadas de pausa, volvemos con una comisiÃ³n permanente renovada y una ambiciÃ³n clara: que ninguna escuela ni estudiante avance en solitario.</p>
+        </div>
+      </div>
+      <div class="stats reveal" aria-label="Datos destacados">
+        <article><strong>20</strong><span>aÃ±os despuÃ©s,<br>volvemos</span></article>
+        <article><strong>XIII</strong><span>Encuentro estatal<br>celebrado</span></article>
+        <article><strong>1</strong><span>red nacional<br>de escuelas</span></article>
+      </div>
+    </section>
+
+    <section class="what" id="hacemos">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Lo que nos mueve</p>
+        <h2>Representar.<br>Conectar. Avanzar.</h2>
+      </div>
+      <div class="pillars">
+        <article class="pillar reveal">
+          <span>01</span>
+          <div class="pillar-icon" aria-hidden="true">â—Ž</div>
+          <h3>RepresentaciÃ³n</h3>
+          <p>Llevamos la voz del estudiantado ante universidades, administraciones, colegios y entidades del sector.</p>
+          <a href="#contacto" aria-label="Saber mÃ¡s sobre representaciÃ³n">Saber mÃ¡s â†—</a>
+        </article>
+        <article class="pillar reveal">
+          <span>02</span>
+          <div class="pillar-icon" aria-hidden="true">âŒ</div>
+          <h3>Red y encuentro</h3>
+          <p>Creamos espacios para compartir retos, buenas prÃ¡cticas y proyectos entre escuelas de toda EspaÃ±a.</p>
+          <a href="#actualidad" aria-label="Ver encuentros de CREM">Ver encuentros â†—</a>
+        </article>
+        <article class="pillar reveal">
+          <span>03</span>
+          <div class="pillar-icon" aria-hidden="true">â†—</div>
+          <h3>Futuro profesional</h3>
+          <p>Acercamos el talento joven a empresas, instalaciones y profesionales de la minerÃ­a y la energÃ­a.</p>
+          <a href="#contacto" aria-label="Colaborar con CREM">Colabora â†—</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature" id="actualidad">
+      <div class="feature-top reveal">
+        <p class="section-kicker">En movimiento</p>
+        <p class="feature-index">01 / 03</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-visual reveal">
+          <div class="salt-shape"></div>
+          <span>MANRESA<br>17â€”19 JUN</span>
+        </div>
+        <article class="feature-copy reveal">
+          <p class="tag">Encuentro estatal Â· 2026</p>
+          <h2>XIII Encuentro de Representantes de Estudiantes de Minas</h2>
+          <p>Tres dÃ­as de geologÃ­a, industria y representaciÃ³n en Manresa: Montserrat, el Museu de Geologia ValentÃ­ Masachs, la Muntanya de Sal de Cardona y una asamblea que marcÃ³ el renacer de la CREM.</p>
+          <ul>
+            <li>Visitas tÃ©cnicas</li><li>Mesa sectorial</li><li>Asamblea general</li>
+          </ul>
+          <a class="text-link light" href="https://www.linkedin.com/company/crem-minas/" target="_blank" rel="noreferrer">Seguir la actualidad en LinkedIn <span>â†—</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="network">
+      <div class="network-title reveal">
+        <p class="section-kicker">Una red que crece</p>
+        <h2>El futuro se construye<br><em>entre escuelas.</em></h2>
+      </div>
+      <div class="school-ticker" aria-label="Escuelas participantes">
+        <div>
+          <span>EPSEM Â· UPC</span><span>EPSB Â· UCO</span><span>ETSIME Â· UPM</span><span>EIMIA Â· UCLM</span><span>UNIVERSIDAD DE LEÃ“N</span><span>UNIVERSIDAD DE CANTABRIA</span>
+        </div>
+      </div>
+      <p class="network-note reveal">Â¿Tu escuela aÃºn no estÃ¡ conectada? Este es el momento.</p>
+    </section>
+
+    <section class="join" id="contacto">
+      <div class="join-copy reveal">
+        <p class="section-kicker">Siguiente nivel</p>
+        <h2>Tu voz tambiÃ©n<br><em>mueve el sector.</em></h2>
+        <p>Si representas a una escuela, quieres proponer una actividad o buscas colaborar con el talento joven de Minas y EnergÃ­a, hablemos.</p>
+      </div>
+      <div class="join-actions reveal">
+        <a class="button button-dark" href="mailto:sectorialminasenergia@gmail.com">EscrÃ­benos <span>â†—</span></a>
+        <a class="button button-outline" href="https://www.linkedin.com/company/crem-minas/" target="_blank" rel="noreferrer">LinkedIn <span>â†—</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><b>CREM</b><small>Coordinadora de Representantes<br>de Estudiantes de Minas</small></span></a>
+    <p>MinerÃ­a Â· EnergÃ­a Â· Universidad</p>
+    <p>Â© 2026 CREM</p>
+  </footer>
+  <script src="{{ "js/crem.js" | relURL }}"></script>
+
 {{ end }}
