@@ -9,3 +9,21 @@
 .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.school-ticker div{animation:none}}
 @media(max-width:850px){.site-header{height:70px}.menu-button{display:block;z-index:2}nav{display:none;position:absolute;top:0;left:0;right:0;background:var(--paper);padding:95px 5vw 35px;flex-direction:column;align-items:flex-start;font-size:1.2rem;box-shadow:0 10px 30px rgba(8,37,34,.1)}nav.open{display:flex}.hero{height:auto;min-height:0;padding-top:125px;grid-template-columns:1fr}.hero-art{height:400px}.hero-foot{display:none}.statement-grid,.feature-grid,.join{grid-template-columns:1fr}.statement-grid{gap:30px}.stats{grid-template-columns:1fr}.stats article{border-right:0;border-bottom:1px solid var(--line);padding-bottom:25px}.section-heading,.network-title{display:block}.section-heading h2,.network-title h2{text-align:left}.pillars{grid-template-columns:1fr}.pillar{min-height:330px;padding-left:0!important;border-left:0!important;border-bottom:1px solid var(--line)}.feature-grid{gap:45px}.network-title{padding:0 5vw}.join-actions{margin-top:25px}footer{align-items:flex-start;gap:30px;flex-direction:column}}
 @media(max-width:520px){body{font-size:15px;line-height:1.55}h1{font-size:clamp(2.85rem,14vw,3.4rem);line-height:.98;letter-spacing:-.055em}.hero{padding-left:20px;padding-right:20px}.hero-copy .lead{font-size:1rem;line-height:1.55;margin:27px 0}.hero-actions{align-items:stretch;flex-direction:column;gap:17px}.hero-actions .button{width:100%}.hero-art{height:330px}.sun{width:110px;height:110px}.statement,.what,.feature,.network,.join{padding-top:76px;padding-bottom:76px}.statement,.join{padding-left:20px;padding-right:20px}.feature,.what{padding-left:20px;padding-right:20px}.statement h2,.what h2,.network h2,.join h2{font-size:clamp(2.35rem,11.5vw,3rem);line-height:1.08;letter-spacing:-.045em}.feature-copy h2{font-size:clamp(2.15rem,10.5vw,2.75rem);line-height:1.1}.feature-visual{height:340px}.school-ticker{margin-top:50px}.join h2{font-size:clamp(2.35rem,11.5vw,3rem)}.brand small{font-size:.58rem;letter-spacing:.09em}.eyebrow,.section-kicker{line-height:1.45}.pillar h3{font-size:1.55rem}}
+
+/* Composición fotográfica con material oficial de CREM */
+.brand-logo{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 auto}
+.hero{padding:115px 5vw 24px;grid-template-rows:1fr auto;column-gap:6vw;row-gap:22px}
+.hero-art{height:min(540px,65vh);min-height:400px}
+.hero-art:before{display:none}
+.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,29,27,.04) 45%,rgba(6,29,27,.78))}
+.hero-art>img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-art p{z-index:1;top:auto;left:28px;bottom:24px;margin:0;color:#fff}
+.art-number{z-index:1;color:#fff;opacity:.8}
+.hero-foot{position:static;grid-column:1/-1;align-self:end}
+.feature-visual{height:520px;background:var(--deep)}
+.feature-visual:after{inset:0;width:auto;height:auto;border-radius:0;background:linear-gradient(180deg,rgba(6,29,27,.3),transparent 38%,rgba(6,29,27,.12))}
+.feature-visual>img{width:100%;height:100%;object-fit:cover;object-position:center}
+.feature-visual span{top:28px;left:28px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.footer-brand .brand-logo{border:2px solid rgba(255,255,255,.7)}
+@media(max-width:850px){.hero{padding-top:105px;grid-template-rows:auto}.hero-art{min-height:0;height:420px}.feature-visual{height:min(540px,115vw)}}
+@media(max-width:520px){.hero{padding-top:100px}.hero-art{height:360px}.brand-logo{width:36px;height:36px}}
