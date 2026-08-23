@@ -5,6 +5,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ "css/crem.css" | relURL }}">
+<style>
+  .schools{padding:9rem 5vw;background:var(--paper);color:var(--ink)}
+  .schools-heading{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(16rem,.7fr);gap:3rem;align-items:end;margin-bottom:4.2rem}
+  .schools-heading h2{margin:0;font:700 clamp(2.6rem,5vw,5.6rem)/.98 var(--display);letter-spacing:-.07em}
+  .schools-heading h2 em{font-style:italic;font-weight:500}
+  .schools-heading>p{margin:0;max-width:32rem;font-size:1.05rem;line-height:1.65;color:rgba(17,47,45,.75)}
+  .schools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .school-card{min-height:18rem;padding:2rem;display:flex;flex-direction:column;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper);transition:background .25s ease,color .25s ease}
+  .school-card:hover{background:var(--deep);color:var(--paper)}
+  .school-location{margin:0 0 1.25rem;font:700 .68rem/1.2 var(--display);letter-spacing:.16em;color:var(--copper)}
+  .school-card h3{margin:0;font:700 clamp(1.25rem,2vw,1.7rem)/1.13 var(--display);letter-spacing:-.04em}
+  .school-university{margin:.8rem 0 1.8rem;font-size:.86rem;line-height:1.45;color:rgba(17,47,45,.7)}
+  .school-card:hover .school-university{color:rgba(251,248,240,.75)}
+  .school-link{margin-top:auto;display:inline-flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid currentColor;padding-bottom:.5rem;font:700 .78rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit}
+  .school-link span{font-size:1.25rem;line-height:.5}
+  @media(max-width:760px){.schools{padding:6rem 6vw}.schools-heading{grid-template-columns:1fr;gap:1.5rem;margin-bottom:2.5rem}.schools-grid{grid-template-columns:1fr}.school-card{min-height:15rem;padding:1.5rem}.schools-heading h2{font-size:clamp(2.5rem,13vw,4.3rem)}}
+</style>
 {{ end }}
 {{ define "main" }}
 
@@ -19,6 +36,7 @@
       <a href="#nosotros">Quiénes somos</a>
       <a href="#hacemos">Qué hacemos</a>
       <a href="#actualidad">Actualidad</a>
+      <a href="#escuelas">Escuelas</a>
       <a class="nav-cta" href="#contacto">Forma parte</a>
     </nav>
   </header>
@@ -124,6 +142,27 @@
         </div>
       </div>
       <p class="network-note reveal">¿Tu escuela aún no está conectada? Este es el momento.</p>
+    </section>
+
+    <section class="schools" id="escuelas">
+      <div class="schools-heading reveal">
+        <div>
+          <p class="section-kicker">Escuelas vinculadas</p>
+          <h2>La red, escuela<br><em>a escuela.</em></h2>
+        </div>
+        <p>Accede a la web oficial de cada centro para consultar su oferta actualizada de grados, másteres y requisitos de acceso.</p>
+      </div>
+      <div class="schools-grid">
+        <article class="school-card reveal"><p class="school-location">MANRESA · BARCELONA</p><h3>Escola Politècnica Superior d’Enginyeria de Manresa</h3><p class="school-university">Universitat Politècnica de Catalunya · EPSEM</p><a class="school-link" href="https://epsem.upc.edu/ca/estudis" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">HUELVA</p><h3>Escuela Técnica Superior de Ingeniería</h3><p class="school-university">Universidad de Huelva · ETSI</p><a class="school-link" href="https://www.uhu.es/etsi/informacion-academica/estudios-de-grado/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">BELMEZ · CÓRDOBA</p><h3>Escuela Politécnica Superior de Belmez</h3><p class="school-university">Universidad de Córdoba · EPSB</p><a class="school-link" href="https://www.uco.es/epsb/es/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">MADRID</p><h3>Escuela Técnica Superior de Ingenieros de Minas y Energía</h3><p class="school-university">Universidad Politécnica de Madrid · ETSIME</p><a class="school-link" href="https://minasyenergia.upm.es/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">TORRELAVEGA · CANTABRIA</p><h3>Escuela Politécnica de Ingeniería de Minas y Energía</h3><p class="school-university">Universidad de Cantabria · EPIME</p><a class="school-link" href="https://web.unican.es/centros/minas/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">CARTAGENA</p><h3>ETS de Ingeniería de Caminos, Canales y Puertos y de Ingeniería de Minas</h3><p class="school-university">Universidad Politécnica de Cartagena · ETSICCPIM</p><a class="school-link" href="https://caminosyminas.upct.es/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">LEÓN</p><h3>Escuela Superior y Técnica de Ingenieros de Minas</h3><p class="school-university">Universidad de León · ESTIM</p><a class="school-link" href="https://energiayminas.unileon.es/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">VIGO</p><h3>Escola de Enxeñaría de Minas e Enerxía</h3><p class="school-university">Universidade de Vigo · EEEM</p><a class="school-link" href="https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?apartat=67&amp;centre=309&amp;idioma=cast&amp;subapartat=353" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+        <article class="school-card reveal"><p class="school-location">ALMADÉN · CIUDAD REAL</p><h3>Escuela de Ingeniería Minera e Industrial de Almadén</h3><p class="school-university">Universidad de Castilla-La Mancha · EIMIA</p><a class="school-link" href="https://www.uclm.es/ciudad-real/eimia/" target="_blank" rel="noreferrer">Web y estudios <span>↗</span></a></article>
+      </div>
     </section>
 
     <section class="join" id="contacto">
